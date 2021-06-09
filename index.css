@@ -18,7 +18,7 @@ body{
 }
 .main-nav ul{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
     padding: 10px;
     list-style: none;
@@ -66,18 +66,27 @@ body{
 .container1{
     background: rosybrown;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
 }
 .container{
     background: rosybrown;
+    text-align: center;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+}
+h2{
+    color: whitesmoke;
+    font-family: cursive;
+
+}
+h4{
+    font-family: cursive;
+}
+p, ul, a{
+    font-family: serif;
 }
 
 
