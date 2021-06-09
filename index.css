@@ -3,7 +3,6 @@ body{
     margin: 20px 60px;
 }
 .wrapper{
-    grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: 50px 50px auto 50px;
@@ -13,6 +12,9 @@ body{
    
     
     
+}
+.main-nav{
+    grid-column: span 12;
 }
 .main-nav ul{
     display: grid;
@@ -28,6 +30,7 @@ body{
     text-decoration: none;
     text-align: center;
     padding: 0.8rem;
+    border-radius: 5px;
 
 }
 .main-nav a:hover{
@@ -48,16 +51,14 @@ body{
     grid-column: span 12;
     text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 470px) {
+    .main-nav{
+        grid-column: span 12;
+
+    }
     .header {
-        grid-column: span 6;
+        grid-column: span 12;
     }
-
-    .menu {
-        grid-row: 1;
-        grid-column: span 6;
-    }
-
     .content {
         grid-column: span 12;
     }
@@ -70,16 +71,17 @@ body{
     align-content: center;
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
 }
 .container{
     background: rosybrown;
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
 }
 
 
 .profile-picture{
     border-radius: 50%;
     align-self: center;
-    max-width: 25%;
 }
