@@ -5,10 +5,10 @@ body{
 .wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: 50px 50px auto 50px;
+    grid-template-rows: auto 50px auto 50px;
     grid-gap: 15px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
    
     
     
@@ -51,7 +51,7 @@ body{
     grid-column: span 12;
     text-align: center;
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 720px) {
     .main-nav ul{
         grid-template-columns: 1fr;
     }
