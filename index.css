@@ -1,26 +1,49 @@
+*{
+  background-image: url('https://drive.google.com/file/d/1CvrWm5dtq_FMRIOjQ0972P3Sks-B9mYJ/view?usp=sharing');
+}
 body {
+  background: url('images/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 5%;
+  /*margin: 5%;*/
+
 }
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-rows: auto auto auto 50px;
-  grid-gap: 10px;
-  padding: 10px;
-  margin: 10px;
+  grid-gap: 5px;
+  /*padding: 10px;
+  margin: 10px;*/
 }
 .main-nav {
-  grid-column: span 12;
-}
-.main-nav ul {
+  /*grid-column: span 12;*/
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 6fr 6fr;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.main-nav ul{
+  list-style: none;
+  display: flex;
+  justify-self: right;
+}
+.main-nav ul a{
+  text-decoration: none;
+  background: rosybrown;
+  color: whitesmoke;
+  padding: 1.5rem;
+  /*display: grid;
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
   padding: 10px;
-  list-style: none;
+  list-style: none;*/
 }
-.main-nav a {
+/*.main-nav a {
   background: rosybrown;
   color: whitesmoke;
   display: block;
@@ -28,20 +51,25 @@ body {
   text-align: center;
   padding: 0.8rem;
   border-radius: 5px;
-}
+}*/
 .main-nav a:hover {
   background: whitesmoke;
   color: rosybrown;
 }
 
 .header {
+  background: rosybrown;
+  color: whitesmoke;
+  overflow: hidden;
   grid-column: span 12;
-  text-align: center;
-  color: rosybrown;
+  
+  /*text-align: center;
+  color: rosybrown;*/
 }
 
 .content {
   grid-column: span 12;
+
 }
 .footer {
   grid-column: span 12;
@@ -70,14 +98,14 @@ body {
   }
 }
 .container1 {
-  background: rosybrown;
+  background: transparent;
   text-align: center;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
 }
 .container {
-  background: rosybrown;
+  background: transparent;
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -100,4 +128,9 @@ a {
   font-size: 18px;
   padding-left: 5px;
   padding-right: 5px;
+}
+img{
+  border-radius: 50%;
+  width: 15%;
+  height: 25%;
 }
