@@ -18,14 +18,14 @@
     <div class="background-image"></div>
     <nav id="nav">
       <h3>Kgotlelelo Mangene</h3>
-      <ul>
+      <ul id="js-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contacts">Contacts</a></li>
       </ul>
       <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
+      <label for="check" class="checkbtn" id="js-navbar-toggle">
         <i class="fas fa-bars"></i>
       </label>
     </nav>
@@ -102,5 +102,14 @@
         </footer>
       </div>
     </div>
+    <script>
+      let mainNav = document.getElementById('js-menu');
+      let navBarToggle = document.getElementById('js-navbar-toggle');
+
+      navBarToggle.addEventListener('click', function () {
+    
+      mainNav.classList.toggle('active');
+       });
+    </script>
   </body>
 </html>
