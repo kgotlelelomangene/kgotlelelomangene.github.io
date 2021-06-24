@@ -1,21 +1,13 @@
 body {
-  background: url('images/background-image.jpg') no-repeat center center fixed;
+  background:  url('images/background-image.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: auto;
   font-family: Arial, Helvetica, sans-serif;
 
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  grid-template-rows: auto auto auto 50px;
-  grid-gap: 5px;
-  margin-top: 100px;
 
-}
 nav {
- 
   display: grid;
   grid-template-columns: 4fr 6fr 1fr 1fr;
   align-items: center;
@@ -40,11 +32,12 @@ nav ul a{
   padding: 1.5rem;
   float: right;
   display: block;
- 
+  font-size: 15px;
 }
 nav h3{
   margin-left: 50px;
   color: whitesmoke;
+ 
 }
 .checkbtn{
   font-size: 25px;
@@ -64,6 +57,14 @@ nav a:hover {
   border-radius: 5px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: auto auto auto 50px;
+  grid-gap: 5px;
+  margin-top: 100px;
+
+}
 
 .header {
   background: rosybrown;
@@ -76,11 +77,59 @@ nav a:hover {
 .content {
   grid-column: span 12;
   top: 75;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.container1 {
+  background: rgba(188,143,143, 0.5);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+.container {
+  background: rgba(188,143,143, 0.5);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+h2 {
+  font-family: cursive;
+}
+h3{
+  font-size: 20px;
+}
+h4 {
+  font-family: cursive;
+  font-size: medium;
+}
+p,
+ul,
+a {
+  font-family: serif;
+  font-size: 20px;
+}
+  
+#aboutParagraph{
+  
+  padding-left: 10px;
+  padding-right: 10px;
+}
+img{
+  border-radius: 50%;
+  width: 15%;
+  height: 25%;
+}
+
 .footer {
   grid-column: span 12;
-  text-align: center;
+  text-align: center;  
 }
+
 @media only screen and (max-width: 720px) {
   nav {
     display: grid;
@@ -117,7 +166,7 @@ nav a:hover {
     height: auto;
     background-color: rosybrown;
     top: 60px;
-    right: 0;
+    right: -100%;
     /*overflow: hidden;*/
     align-items: center;;
     flex-direction: column;
@@ -134,7 +183,7 @@ nav a:hover {
   }
 
   #check:checked ~ ul{
-  right: 100%;
+  right: 0;
 
   }
 
@@ -145,43 +194,4 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 
-}
-.container1 {
-
-  background: rgba(188,143,143, 0.5);
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
-.container {
-
-  background: rgba(188,143,143, 0.5);
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
-h2 {
-  color: whitesmoke;
-  font-family: cursive;
-}
-h4 {
-  font-family: cursive;
-  font-size: medium;
-}
-p,
-ul,
-a {
-  font-family: serif;
-}
-#aboutParagraph{
-  font-size: 18px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-img{
-  border-radius: 50%;
-  width: 15%;
-  height: 25%;
 }
