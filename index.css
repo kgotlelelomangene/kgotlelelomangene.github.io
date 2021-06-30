@@ -28,7 +28,7 @@ nav ul{
 }
 nav ul a{
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   padding: 1.5rem;
   float: right;
   display: block;
@@ -36,7 +36,7 @@ nav ul a{
 }
 nav h3{
   margin-left: 50px;
-  color: whitesmoke;
+  color: black;
  
 }
 .checkbtn{
@@ -44,7 +44,7 @@ nav h3{
   float: right;
   line-height: 80px;
   margin-right: 40px;
-  color: whitesmoke;
+  color: black;
   display: none;
 }
 #check{
@@ -68,7 +68,7 @@ nav a:hover {
 
 .header {
   background: rosybrown;
-  color: whitesmoke;
+  color: black;
   overflow: hidden;
   grid-column: span 12;
 
@@ -87,7 +87,7 @@ nav a:hover {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
 }
 .container {
   background: rgba(188,143,143, 0.5);
@@ -95,7 +95,7 @@ nav a:hover {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
 }
 h2 {
   font-family: cursive;
