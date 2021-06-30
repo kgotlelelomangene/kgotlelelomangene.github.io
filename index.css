@@ -1,5 +1,6 @@
 body {
-  background:  url('images/background-image.jpg') no-repeat center center fixed;
+  background:  url('images/background.jpg') no-repeat center center fixed;
+  background-image: linear-gradient();
   background-size: cover;
   height: 100%;
   overflow: auto;
@@ -11,7 +12,7 @@ nav {
   display: grid;
   grid-template-columns: 4fr 6fr 1fr 1fr;
   align-items: center;
-  background: rosybrown;
+  background: black;
   position: fixed;
   width: 100%;
   left: 0;
@@ -19,24 +20,25 @@ nav {
   top: 0;
   height: auto;
   overflow: hidden;
+  border: 0;
+  border-radius: 0;
 }
 nav ul{
   list-style: none;
   display: flex;
   float: right;
-  text-transform: uppercase;
 }
 nav ul a{
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 1.5rem;
   float: right;
-  display: block;
+  display: flex;
   font-size: 15px;
 }
 nav h3{
   margin-left: 50px;
-  color: black;
+  color: white;
  
 }
 .checkbtn{
@@ -44,7 +46,7 @@ nav h3{
   float: right;
   line-height: 80px;
   margin-right: 40px;
-  color: black;
+  color: white;
   display: none;
 }
 #check{
@@ -52,9 +54,9 @@ nav h3{
 }
 
 nav a:hover {
-  background: whitesmoke;
-  color: rosybrown;
-  border-radius: 5px;
+  background: none;
+  color: gray;
+  
 }
 
 .wrapper {
@@ -66,31 +68,52 @@ nav a:hover {
 
 }
 
-.header {
-  background: rosybrown;
-  color: black;
-  overflow: hidden;
-  grid-column: span 12;
-
-}
-
 .content {
   grid-column: span 12;
-  top: 75;
+  top: 100;
   margin-left: 50px;
   margin-right: 50px;
 }
 
 .container1 {
-  background: rgba(188,143,143, 0.9);
+  background: rgba(225,225,225, 0.5);
   text-align: center;
+  align-items: center;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
+  margin-top: 50px;
   border: 1px solid black;
 }
+.about{
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-template-rows: auto;
+}
+.container1 .about .paragraph{
+  text-align: left;
+}
+.container1 .about .image{
+  align-self: center;
+}
+.container1 img{
+  border-radius: 50%;
+  width: 25%;
+  height: 50%;
+}
+.skills-and-competencies{
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: auto;
+  padding: 10px;
+  margin: 10px;
+
+}
+.skills-and-competencies i{
+  margin-top: 10px;
+}
 .container {
-  background: rgba(188,143,143, 0.5);
+  background: rgba(225,225,225, 0.5);
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -98,34 +121,26 @@ nav a:hover {
   border: 1px solid black;
 }
 h2 {
-  font-family: cursive;
+  text-transform: uppercase;
 }
-h3{
+#nav h3{
   font-size: 20px;
 }
-h4 {
-  font-family: cursive;
-  font-size: medium;
+#nav a{
+  font-size: 20px;
 }
 p,
 ul,
 a {
-  font-family: serif;
   font-size: 20px;
 }
   
 #aboutParagraph{
-  
   padding-left: 10px;
   padding-right: 10px;
 }
-img{
-  border-radius: 50%;
-  width: 15%;
-  height: 25%;
-}
 
-.footer {
+.footer{
   grid-column: span 12;
   text-align: center;  
 }
@@ -145,11 +160,15 @@ img{
   .main-nav ul {
     grid-template-columns: 1fr 1fr;
   }
-  .header {
-    grid-template-columns: 1fr;
-  }
+
   .content {
     grid-template-columns: 1fr;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .skills-and-competencies {
+    grid-template-columns: 6fr 6fr;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -172,11 +191,11 @@ img{
     float: none;
     width: auto;
     height: auto;
-    background-color: rosybrown;
+    background-color: black;
     top: 60px;
     right: 0;
     overflow: hidden;
-    align-items: center;;
+    align-items: center;
     flex-direction: column;
     transition: all .5s;
   }
@@ -184,20 +203,19 @@ img{
   nav ul li{
     display: block;
   }
-  
+
   .checkbtn{
     display: block;
     cursor: pointer;
   }
 
-  /*#check:checked ~ ul{
-  right: 0;
-  }*/
-
-  .header {
-    grid-template-columns: auto;
-  }
   .content {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .skills-and-competencies {
     grid-template-columns: 1fr;
   }
 
