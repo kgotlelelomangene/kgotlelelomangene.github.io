@@ -148,6 +148,10 @@ a {
   display: block; 
 }
 
+#contacts a{
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 720px) {
   nav {
     display: grid;
