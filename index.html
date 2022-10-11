@@ -15,12 +15,11 @@
 
 <body>
   <div class="background-image"></div>
-  <nav id="nav">
+  <nav id="nav" class="nav">
     <h3>Kgotlelelo Mangene</h3>
-    <ul id="js-menu">
+    <ul id="js-menu" class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contacts">Contacts</a></li>
     </ul>
     <input type="checkbox" id="check">
@@ -44,7 +43,7 @@
             <p id="aboutParagraph">
               Hi, I am Kgotlelelo Mangene.I hold a diploma in Information Technology(IT)
               specializing in Software Development from Tshwane University of Technology(TUT).
-              I am currently doing a Web Development internship with Umuzi. 
+              I am currently doing a Web Development internship with Umuzi.
               I am seeking challenging opportunities where I can fully
               use my skills for the success of the organization. I enjoy solving IT-related
               problems, and I always get pleasure from helping others who
@@ -98,40 +97,40 @@
         </div>
       </div>
 
-      <div id="portfolio" class="container">
-        <h2>Link to Curriculum Vitae</h2>
-
-        <a href="https://drive.google.com/file/d/1f6XYMF2DSoveRD5-KxmkzX6F38IjVx3v/view?usp=sharing">Curriculum
-          Vitae</a>
-      </div>
-
       <div id="contacts" class="container">
         <h2>Contacts</h2>
 
-        <a
-          href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=CllgCJvnrgxFrHFgxjfxLwXpktfjdPhZHwBBjQwqwvzwhZKZdDCWNxcJzwrjFMZzBJsCmsjtLbB"><i
-            class="fas fa-envelope fa-fw"></i></a>
+        <a href="mailto:kgotlelelomangene@gmail.com" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
 
-        <a href="https://web.facebook.com/kgotlelelo.mangene.9"><i class="fab fa-facebook"></i></a>
+        <a href="https://web.facebook.com/kgotlelelo.mangene.9" target="_blank"><i class="fab fa-facebook"></i></a>
 
-        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/KGOTLELELOMANG2" target="_blank"><i class="fab fa-twitter"></i></a>
 
-        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/kgotlelelo-mangene-5b1709192/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
 
-        <a href="https://github.com/kgotlelelomangene"><i class="fab fa-github"></i></a><br>
+        <a href="https://github.com/kgotlelelomangene" target="_blank"><i class="fab fa-github"></i></a><br>
 
         <p><i class="fas fa-phone-square fa-fw"></i>0728508243</p>
       </div>
     </div>
   </div>
   <script>
+
     let mainNav = document.getElementById('js-menu');
     let navBarToggle = document.getElementById('js-navbar-toggle');
 
     navBarToggle.addEventListener('click', function () {
-
       mainNav.classList.toggle('active');
+
     });
+
+    mainNav.addEventListener('click', function () {
+
+      mainNav.classList.toggle('inactive');
+      window.location.reload();
+    });
+
   </script>
 </body>
 

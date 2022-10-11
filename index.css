@@ -148,6 +148,10 @@ a {
   display: block; 
 }
 
+.inactive {
+  display: none;
+}
+
 #contacts a{
   margin-left: 20px;
 }
